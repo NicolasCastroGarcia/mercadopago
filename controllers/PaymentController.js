@@ -13,7 +13,7 @@ class PaymentController {
         unit,
         img
       );
-
+      console.log(checkout, "checkout response");
       return res.redirect(checkout.init_point); // cambiar esto
     } catch (err) {
       res.redirect("/");
@@ -31,7 +31,7 @@ class PaymentController {
         body += chunk.toString();
       });
       req.on("end", () => {
-        console.log(body);
+        console.log(body, "webhook response");
         res.end("ok");
       });
     }

@@ -19,7 +19,7 @@ app.get("/detail", (req, res) => {
 });
 
 app.get("/success", (req, res) => {
-  res.render("success");
+  res.render("success", req.query);
 });
 
 app.get("/error", (req, res) => {
