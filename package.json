@@ -2,7 +2,7 @@
   "name": "mp-ecommerce-nodejs",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "./app.js",
   "scripts": {
     "start": "node ./app.js",
     "test": "app.js"
