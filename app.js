@@ -36,8 +36,6 @@ app.post("/payment/new", (req, res) =>
 
 app.post("/webhook", (req, res) => PaymentInstance.webhook(req, res));
 
-app.get("/webhook", (req, res) => PaymentInstance.webhook(req, res));
-
 app.use(express.static("assets"));
 
 app.use("/assets", express.static(__dirname + "/assets"));
