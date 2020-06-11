@@ -26,7 +26,7 @@ class PaymentController {
 
   async webhook(req, res) {
     console.log(req.body);
-    res.status(200);
+    return res.status(200);
   }
 }
 
